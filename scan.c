@@ -68,7 +68,7 @@ void pattern_scan(const char *filename, char *hex_string) {
     for (uintptr_t offset = 0; offset < len; ++offset) {
         const uint8_t *scan_buf = (uint8_t *) ((uintptr_t)buf + offset);
         bool pattern_found = true;
-        // scan for wildcards
+        // process wildcards
         for (uintptr_t i = 0; i < pattern_len; ++i) {
             if (!(pattern_mask &((uint64_t)1 << i)))
                 continue;
