@@ -90,11 +90,7 @@ void pattern_scan(const char *filename, char *hex_string) {
 }
 
 int main(int argc, char *argv[]) {
-    if (argc < 3) {
-        printf("Incorrect usage!\n");
-        return EXIT_FAILURE;
-    }
-    if (argc > 3) {
+    if (argc != 3) {
         printf("Incorrect usage!\n");
         return EXIT_FAILURE;
     }
