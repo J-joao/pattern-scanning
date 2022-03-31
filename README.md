@@ -24,4 +24,5 @@ inside this directory there's a file called ```hookme.c``` your objective is to 
 <img src="img/objdump"> <br>
 
 **run the pattern scanner inside the executable's directory and pass the function's body as argument** <br>
+```./pattern_scan . "55 48 89 e5 89 7d fc 89 75 f8 ??"```
 <img src="img/pattern_scan.jpg">
