@@ -21,7 +21,7 @@ inside this directory there's a file called ```hookme.c``` your objective is to 
 ```objdump -S hookme```
 
 **copy the function's body** <br>
-<img src="img/objdump.">
+<img src="img/objdump"> <br>
 
 **run the pattern scanner inside the executable's directory and pass the function's body as argument** <br>
-<img src="img/pattern_scanning.">
+<img src="img/pattern_scan.jpg">
