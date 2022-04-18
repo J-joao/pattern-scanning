@@ -18,6 +18,8 @@
 #define RST "\e[0;0m"
 #define ERROR_MSG RED"[+] error: "RST
 
+uint32_t results_found = -1;
+
 uint8_t hex_char_to_int(char c) {
     if (c >= '0' && c < ';') {
         return c - '0';
@@ -59,7 +61,7 @@ int check_dir(const char* dirname) {
 void pattern_scan(const char *filename, char *pattern) {
     char *buf;
     uint8_t *pattern_buf;    
-    uint32_t pattern_len = 1, results_found = -1;  
+    uint32_t pattern_len = 1;  
     uint64_t pattern_mask = UINT64_MAX;
     FILE *fp = fopen(filename, "rb");
     
